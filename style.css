@@ -243,7 +243,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   gap: 10px;
   width: 100%;
   height: 662px;
@@ -254,20 +253,15 @@ body {
 }
 
 .program-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 10px;
+    width: 94.7%;
+    height: 50px;
   position: absolute;
-  gap: 10px;
-  width: 94.7%;
-  height: 601px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .title {
@@ -276,31 +270,14 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  /* or 140% */
-
-  display: flex;
-  align-items: center;
   letter-spacing: -0.04em;
-
   color: #ffffff;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0;
 }
 
 .title-underline {
   width: 8%;
   height: 0px;
   border: 2px solid #a04038;
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0;
 }
 
 .program-details {
@@ -312,14 +289,7 @@ body {
   gap: 2.68px;
   position: absolute;
   width: 95%;
-  /* height: 421px; */
-
-  border: 5px dotted yellow;
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  margin-top: 70px;
 }
 
 .program-card {
@@ -330,7 +300,6 @@ body {
   padding: 0px;
   gap: 8.92px;
   width: 100%;
-  /* width: 355px; */
   height: 82.06px;
 
   background: url(pattern_bg.png), #3b3e45;
@@ -345,7 +314,6 @@ body {
   font-weight: 700;
   font-size: 14.2712px;
   line-height: 25px;
-  /* identical to box height, or 175% */
   display: flex;
   align-items: center;
   letter-spacing: -0.01em;
@@ -361,18 +329,9 @@ body {
   font-weight: 700;
   font-size: 10.7034px;
   line-height: 22px;
-  /* or 208% */
-
   display: flex;
   align-items: center;
-
   color: #ffffff;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .frame {
@@ -384,12 +343,7 @@ gap: 10px;
 width: 85%;
 height: 68px;
 margin-top: 548px;
-
 background: #FF4F38;
-
-flex: none;
-order: 2;
-flex-grow: 0;
 }
 
 .joinSummit {
@@ -398,7 +352,6 @@ font-style: normal;
 font-weight: 900;
 font-size: 16px;
 line-height: 28px;
-/* identical to box height, or 175% */
 color: #FFFFFF;
 }
 
@@ -406,10 +359,9 @@ color: #FFFFFF;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     gap: 10px;
     width: 100%;
-    height: 662px;
+    height: 455px;
     left: calc(50% - 375px / 2);
     top: calc(50% - 662px / 2 + 56px);
     background: url(pattern_bg.png), #fff;
@@ -420,16 +372,11 @@ color: #FFFFFF;
  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 0px;
-  position: absolute;
   gap: 10px;
   width: 94.7%;
-  height: 601px;
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  border: 2px solid green; 
+  height: 50px;
 }
 
 .title-speakers {
@@ -438,7 +385,6 @@ font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 28px;
-/* or 140% */
 display: flex;
 align-items: center;
 letter-spacing: -0.05em;
@@ -454,14 +400,7 @@ color: #000000;
   gap: 17.79px;
   position: absolute;
   width: 95%;
-  /* height: 421px; */
-
-  border: 5px dotted yellow;
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  margin-top: 70px;
 }
 
 .speakers-card {
