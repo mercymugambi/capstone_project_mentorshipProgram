@@ -12,9 +12,7 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.remove('active');
   }));
 
-//objects 
 const featuredSpeakers = document.getElementById("featuredSpeakers");
-const moreSpeakers = document.getElementById("moreSpeakers");
 
 const allSpeakers = [
   {
@@ -46,25 +44,27 @@ const allSpeakers = [
   },
 
   {
-    image: "./assets/images/speaker_01 1.png",
-    speakerName: "Grace Benkler",
-    profession: "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
-    carreer: "Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006",
+    image: './assets/images/speaker_01 1.png',
+    speakerName: 'Grace Benkler',
+    profession: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    carreer: 'Benkler studies commons-based peer production, and published his seminal book',
   },
 
   {
-    image: "./assets/images/speaker_01 1.png",
-    speakerName: "Truphena Benkler",
-    profession: "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
-    carreer: "Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006",
+    image: './assets/images/speaker_01 1.png',
+    speakerName: 'Truphena Benkler',
+    profession: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    carreer: 'Benkler studies commons-based peer production, and published his seminal book',
   },
 ];
+
+const readMore = document.querySelector(".readMore");
 
 window.addEventListener('load', (() => {
   function addfeatured(){
   let addfeatureSpeakers = '';
   allSpeakers.forEach((speaker, index) =>{
-    if ((window.screen.availWidth < 768) && index <=1){
+    if ((window.screen.availWidth >= 768) ){
       addfeatureSpeakers += `<div class="speakers-card">
       <img src="${speaker.image}" alt="image1"/>
       <div class="speakers-intro">
@@ -73,7 +73,7 @@ window.addEventListener('load', (() => {
           <p class="speakers-career">${speaker.carreer}</p>
       </div>
   </div>`;
-    }else if ((window.screen.availWidth >= 768)) {
+    }else if (index <2) {
       
       addfeatureSpeakers += `<div class="speakers-card">
       <img src="${speaker.image}" alt="image1"/>
@@ -87,9 +87,22 @@ window.addEventListener('load', (() => {
   })
   featuredSpeakers.innerHTML = addfeatureSpeakers;
   }
-  addfeatured();
 
+  readMore.addEventListener('click', () => {
+    featuredSpeakers.innerHTML = '';
+    allSpeakers.forEach((speaker) =>{
+        featuredSpeakers.innerHTML += `<div class="speakers-card">
+        <img src="${speaker.image}" alt="image1"/>
+        <div class="speakers-intro">
+            <h2 class="speakers-name">${speaker.speakerName}</h2>
+            <p class="speakers-proffession">${speaker.profession}</p>
+            <p class="speakers-career">${speaker.carreer}</p>
+        </div>
+    </div>`;
+  })});
+
+  addfeatured();
   window.onresize = addfeatured;
-  
+
 }));
 
