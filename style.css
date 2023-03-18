@@ -150,15 +150,29 @@ body {
   align-items: center;
   padding-top: 150px;
   gap: 30px;
-
-  /* margin-top: 50px; */
-
-  /* position: absolute; */
   width: 98%;
   height: 306px;
+}
 
-  /* left: calc(50% - 373px/2);
-top: calc(50% - 306px/2 + 19px); */
+#hero-top {
+  background: url(./assets/images/header_bg.jpg);
+  background-size: cover;
+  background-clip: inherit;
+  font-size: 33px;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#hero-top span {
+  font-size: 17px;
+  color: red;
+  letter-spacing: 0.03em;
+}
+
+#hero-top-about span {
+  font-size: 17px;
+  color: red;
 }
 
 .hero-image {
@@ -256,7 +270,7 @@ top: calc(50% - 306px/2 + 19px); */
   height: 662px;
   left: calc(50% - 375px / 2);
   top: calc(50% - 662px / 2 + 56px);
-  background: url(pattern_bg.png), #282b32;
+  background: url(./assets/images/program-bg.jpg), #282b32;
   mix-blend-mode: normal;
 }
 
@@ -274,13 +288,25 @@ top: calc(50% - 306px/2 + 19px); */
 
 img.im1 {
   position: relative;
+  filter: blur(2px);
 }
 
 .img1 {
   position: absolute;
-  bottom: -586px;
-  left: 177px;
+  bottom: -556px;
+  left: 218px;
+  color: #fff;
+  font-size: 24px;
 }
+
+.img2 {
+  position: absolute;
+  bottom: -556px;
+  left: 560px;
+  color: #fff;
+  font-size: 24px;
+}
+
 .title {
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -316,6 +342,7 @@ img.im1 {
   align-items: center;
   padding: 0;
   gap: 8.92px;
+  mix-blend-mode: lighten;
   width: 100%;
   height: 82.06px;
   background: url(pattern_bg.png), #3b3e45;
@@ -630,6 +657,10 @@ img.im1 {
   height: 141.72px;
   display: flex;
   justify-content: center;
+}
+
+.abtLang {
+  border: 1px solid lightgray;
 }
 
 .previous-summit {
@@ -984,6 +1015,8 @@ img.im1 {
     grid-template-columns: 1fr 1fr;
     width: 72%;
   }
+
+
 
   .group1Logo {
     display: flex;
