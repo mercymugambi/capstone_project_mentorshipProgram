@@ -28,17 +28,20 @@ Images were installed to bring out the aim of the project.
 
 ## Screen Shots
 
-![Screen Shot](./images/Screenshot1.png)
+![Screen Shot](./assets/images/screenshoot.PNG)
 
 <hr/>
 
-![Screen Shot](./images/Screenshot2.png)
+![Screen Shot](./assets/images/screenshoot2.PNG)
+
+<hr/>
+![Screen Shot](./assets/images/screenshoot3.PNG)
 
 <hr/>
 
 ## Visit Website
 
-[GitHub pages]()
+[GitHub pages](https://mercymugambi.github.io/capstone_project_mentorshipProgram/)
 
 ## Built With
 

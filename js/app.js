@@ -16,7 +16,7 @@ const featuredSpeakers = document.getElementById("featuredSpeakers");
 
 const allSpeakers = [
   {
-    image: './assets/images/speakerMercy.png',
+    image: './assets/images/speaker_01 2.png',
     speakerName: 'Kim Doctor',
     profession: 'Berkman Professor Shadowed physicians in multiple departments',
     carreer: 'Current Physician Assistant (PA) student',
