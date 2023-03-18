@@ -1,5 +1,5 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
@@ -12,7 +12,7 @@ document.querySelectorAll('.a-links').forEach((n) => n
     navMenu.classList.remove('active');
   }));
 
-const featuredSpeakers = document.getElementById("featuredSpeakers");
+const featuredSpeakers = document.getElementById('featuredSpeakers');
 
 const allSpeakers = [
   {
@@ -33,7 +33,7 @@ const allSpeakers = [
     image: './assets/images/speaker_01 2.png',
     speakerName: 'Joes Njoroge',
     profession: 'Software Engineer at microsoft Studies at Harvard Law pauls college',
-    carreer: 'Jes studies commons-based communications book'
+    carreer: 'Jes studies commons-based communications book',
   },
 
   {
@@ -58,7 +58,7 @@ const allSpeakers = [
   },
 ];
 
-const readMore = document.querySelector(".readMore");
+const readMore = document.querySelector('.readMore');
 
 window.addEventListener('load', (() => {
   function addfeatured() {
@@ -74,7 +74,6 @@ window.addEventListener('load', (() => {
       </div>
   </div>`;
       } else if (index < 2) {
-
         addfeatureSpeakers += `<div class="speakers-card">
       <img src="${speaker.image}" alt="image1"/>
       <div class="speakers-intro">
@@ -84,7 +83,7 @@ window.addEventListener('load', (() => {
       </div>
   </div>`;
       }
-    })
+    });
     featuredSpeakers.innerHTML = addfeatureSpeakers;
   }
 
@@ -99,11 +98,9 @@ window.addEventListener('load', (() => {
             <p class="speakers-career">${speaker.carreer}</p>
         </div>
     </div>`;
-    })
+    });
   });
 
   addfeatured();
   window.onresize = addfeatured;
-
 }));
-
