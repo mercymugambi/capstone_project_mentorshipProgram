@@ -35,9 +35,6 @@ Images were installed to bring out the aim of the project.
 ![Screen Shot](./assets/images/screenshoot2.PNG)
 
 <hr/>
-![Screen Shot](./assets/images/screenshoot3.PNG)
-
-<hr/>
 
 ## Visit Website
 
@@ -51,9 +48,9 @@ Images were installed to bring out the aim of the project.
 - Javascript
 - Github pages for deployment
 
-## Live Demo
+## Live Demo 
 
-[Live Demo link](https://www.loom.com/share/d3912d12f5b34ea28ee349eb21992d8d)
+[Live Demo link](https://www.loom.com/share/07886dee04764432b037de466af1e97c)
 
 ## Contributors
 
