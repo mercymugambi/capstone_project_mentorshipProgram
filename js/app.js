@@ -16,14 +16,14 @@ const featuredSpeakers = document.getElementById('featuredSpeakers');
 
 const allSpeakers = [
   {
-    image: './assets/images/speaker_01 2.png',
+    image: './assets/images/speakerMercy.png',
     speakerName: 'Kim Doctor',
     profession: 'Berkman Professor Shadowed physicians in multiple departments',
     carreer: 'Current Physician Assistant (PA) student',
   },
 
   {
-    image: './assets/images/speaker_01 2.png',
+    image: './assets/images/speaker_012.png',
     speakerName: 'osugo Benkler',
     profession: 'Professor of Entrepreneurial Business Studies at Harvard Law School',
     carreer: 'Jomo kenyatta University',
