@@ -16,42 +16,42 @@ const featuredSpeakers = document.getElementById("featuredSpeakers");
 
 const allSpeakers = [
   {
-    image: './assets/images/speaker_01 2.png',
+    image: '/assets/images/speaker_01 2.png',
     speakerName: 'Kim Doctor',
     profession: 'Berkman Professor Shadowed physicians in multiple departments',
     carreer: 'Current Physician Assistant (PA) student',
   },
 
   {
-    image: './assets/images/speaker_01 2.png',
+    image: '/assets/images/speaker_01 2.png',
     speakerName: 'osugo Benkler',
     profession: 'Professor of Entrepreneurial Business Studies at Harvard Law School',
     carreer: 'Jomo kenyatta University',
   },
 
   {
-    image: './assets/images/speaker_01 2.png',
+    image: '/assets/images/speaker_01 2.png',
     speakerName: 'Joes Njoroge',
     profession: 'Software Engineer at microsoft Studies at Harvard Law pauls college',
     carreer: 'Jes studies commons-based communications book'
   },
 
   {
-    image: './assets/images/speaker_01 2.png',
+    image: '/assets/images/speaker_01 2.png',
     speakerName: 'Kimbarly Beverly',
     profession: 'Lecture of Entrepreneurial Business Studies at Harvard Law Sch School',
     carreer: 'commons-based peer production, and published his seminal book',
   },
 
   {
-    image: './assets/images/speaker_01 2.png',
+    image: '/assets/images/speaker_01 2.png',
     speakerName: 'Grace Benkler',
     profession: 'Grace Professor of Entrepreneurial Legal Studies at Harvard Law School',
     carreer: 'Grace studies commons-based peer production, and published his seminal book',
   },
 
   {
-    image: './assets/images/speaker_01 2.png',
+    image: '/assets/images/speaker_01 2.png',
     speakerName: 'Truphena Benkler',
     profession: 'Lecture of Entrepreneurial Business Studies at Harvard Law Sch School',
     carreer: 'Truh studies commons-based computer science and programmings',
